@@ -47,6 +47,12 @@ GitHub Pages では、最新版の `milk_nutrition_visualizer.html` を **`index
 - nutrition numeric mismatches: `0`
 - metadata corrections: `1`
 
+## 食材コレクション
+
+左の入力欄下部に100食材の食経験記録を追加しました。検索・カテゴリ・記録済み/未記録で絞り込めます。チェックはこの端末のブラウザに保存し、共有URLには含めません。ブラウザの保存データを削除すると記録も消えます。
+
+添付の `food_master_100_patch.js` v2 を内蔵しています。`nutritionReady:true` かつ既存の栄養DBに接続できる21品のみ、今日の離乳食へ追加できます。`nutritionReady:false` の79品は食経験の記録専用で、栄養計算に含めません。100品の達成を促す機能ではありません。
+
 ## License
 
 MIT License
